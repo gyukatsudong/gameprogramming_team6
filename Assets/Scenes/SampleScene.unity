@@ -129,7 +129,6 @@ GameObject:
   m_Component:
   - component: {fileID: 98369068}
   - component: {fileID: 98369067}
-  - component: {fileID: 98369066}
   - component: {fileID: 98369070}
   m_Layer: 0
   m_Name: gwangu
@@ -138,18 +137,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &98369066
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 98369065}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 06d2b205225ea0a45a1f3edd4cd3b830, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::UIHoverScale
 --- !u!212 &98369067
 SpriteRenderer:
   serializedVersion: 2
@@ -247,7 +234,6 @@ GameObject:
   m_Component:
   - component: {fileID: 328084922}
   - component: {fileID: 328084921}
-  - component: {fileID: 328084920}
   - component: {fileID: 328084924}
   m_Layer: 0
   m_Name: daejeon
@@ -256,18 +242,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &328084920
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 328084919}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 06d2b205225ea0a45a1f3edd4cd3b830, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::UIHoverScale
 --- !u!212 &328084921
 SpriteRenderer:
   serializedVersion: 2
@@ -365,7 +339,6 @@ GameObject:
   m_Component:
   - component: {fileID: 345243726}
   - component: {fileID: 345243725}
-  - component: {fileID: 345243724}
   - component: {fileID: 345243728}
   m_Layer: 0
   m_Name: seoul
@@ -374,18 +347,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &345243724
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 345243723}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 06d2b205225ea0a45a1f3edd4cd3b830, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::UIHoverScale
 --- !u!212 &345243725
 SpriteRenderer:
   serializedVersion: 2
@@ -483,7 +444,6 @@ GameObject:
   m_Component:
   - component: {fileID: 350597480}
   - component: {fileID: 350597479}
-  - component: {fileID: 350597478}
   - component: {fileID: 350597482}
   m_Layer: 0
   m_Name: gyeongsang_n
@@ -492,18 +452,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &350597478
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 350597477}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 06d2b205225ea0a45a1f3edd4cd3b830, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::UIHoverScale
 --- !u!212 &350597479
 SpriteRenderer:
   serializedVersion: 2
@@ -601,7 +549,6 @@ GameObject:
   m_Component:
   - component: {fileID: 445081493}
   - component: {fileID: 445081492}
-  - component: {fileID: 445081491}
   - component: {fileID: 445081495}
   m_Layer: 0
   m_Name: jeolla_s
@@ -610,18 +557,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &445081491
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 445081490}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 06d2b205225ea0a45a1f3edd4cd3b830, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::UIHoverScale
 --- !u!212 &445081492
 SpriteRenderer:
   serializedVersion: 2
@@ -856,7 +791,6 @@ GameObject:
   m_Component:
   - component: {fileID: 555602798}
   - component: {fileID: 555602797}
-  - component: {fileID: 555602796}
   - component: {fileID: 555602800}
   m_Layer: 0
   m_Name: sejong
@@ -865,18 +799,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &555602796
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 555602795}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 06d2b205225ea0a45a1f3edd4cd3b830, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::UIHoverScale
 --- !u!212 &555602797
 SpriteRenderer:
   serializedVersion: 2
@@ -1058,7 +980,6 @@ GameObject:
   m_Component:
   - component: {fileID: 774224968}
   - component: {fileID: 774224967}
-  - component: {fileID: 774224966}
   - component: {fileID: 774224970}
   m_Layer: 0
   m_Name: ulsan
@@ -1067,18 +988,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &774224966
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 774224965}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 06d2b205225ea0a45a1f3edd4cd3b830, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::UIHoverScale
 --- !u!212 &774224967
 SpriteRenderer:
   serializedVersion: 2
@@ -1176,7 +1085,6 @@ GameObject:
   m_Component:
   - component: {fileID: 835723886}
   - component: {fileID: 835723885}
-  - component: {fileID: 835723884}
   - component: {fileID: 835723888}
   m_Layer: 0
   m_Name: chungcheong_n
@@ -1185,18 +1093,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &835723884
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 835723883}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 06d2b205225ea0a45a1f3edd4cd3b830, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::UIHoverScale
 --- !u!212 &835723885
 SpriteRenderer:
   serializedVersion: 2
@@ -1294,7 +1190,6 @@ GameObject:
   m_Component:
   - component: {fileID: 848590723}
   - component: {fileID: 848590722}
-  - component: {fileID: 848590721}
   - component: {fileID: 848590725}
   m_Layer: 0
   m_Name: chungcheong_s
@@ -1303,18 +1198,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &848590721
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 848590720}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 06d2b205225ea0a45a1f3edd4cd3b830, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::UIHoverScale
 --- !u!212 &848590722
 SpriteRenderer:
   serializedVersion: 2
@@ -1412,7 +1295,6 @@ GameObject:
   m_Component:
   - component: {fileID: 900678032}
   - component: {fileID: 900678031}
-  - component: {fileID: 900678030}
   - component: {fileID: 900678034}
   m_Layer: 0
   m_Name: daegu
@@ -1421,18 +1303,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &900678030
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 900678029}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 06d2b205225ea0a45a1f3edd4cd3b830, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::UIHoverScale
 --- !u!212 &900678031
 SpriteRenderer:
   serializedVersion: 2
@@ -1530,7 +1400,6 @@ GameObject:
   m_Component:
   - component: {fileID: 965231030}
   - component: {fileID: 965231029}
-  - component: {fileID: 965231028}
   - component: {fileID: 965231032}
   m_Layer: 0
   m_Name: gieonggi
@@ -1539,18 +1408,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &965231028
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 965231027}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 06d2b205225ea0a45a1f3edd4cd3b830, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::UIHoverScale
 --- !u!212 &965231029
 SpriteRenderer:
   serializedVersion: 2
@@ -1648,7 +1505,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1139078110}
   - component: {fileID: 1139078109}
-  - component: {fileID: 1139078108}
   - component: {fileID: 1139078112}
   m_Layer: 0
   m_Name: uleongdu
@@ -1657,18 +1513,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1139078108
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1139078107}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 06d2b205225ea0a45a1f3edd4cd3b830, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::UIHoverScale
 --- !u!212 &1139078109
 SpriteRenderer:
   serializedVersion: 2
@@ -1766,7 +1610,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1439594789}
   - component: {fileID: 1439594788}
-  - component: {fileID: 1439594787}
   - component: {fileID: 1439594791}
   m_Layer: 0
   m_Name: jeolla_n
@@ -1775,18 +1618,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1439594787
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1439594786}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 06d2b205225ea0a45a1f3edd4cd3b830, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::UIHoverScale
 --- !u!212 &1439594788
 SpriteRenderer:
   serializedVersion: 2
@@ -1884,7 +1715,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1539820832}
   - component: {fileID: 1539820831}
-  - component: {fileID: 1539820830}
   - component: {fileID: 1539820834}
   m_Layer: 0
   m_Name: gangwon
@@ -1893,18 +1723,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1539820830
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1539820829}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 06d2b205225ea0a45a1f3edd4cd3b830, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::UIHoverScale
 --- !u!212 &1539820831
 SpriteRenderer:
   serializedVersion: 2
@@ -2002,7 +1820,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1645224348}
   - component: {fileID: 1645224347}
-  - component: {fileID: 1645224346}
   - component: {fileID: 1645224350}
   m_Layer: 0
   m_Name: jeju
@@ -2011,18 +1828,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1645224346
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1645224345}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 06d2b205225ea0a45a1f3edd4cd3b830, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::UIHoverScale
 --- !u!212 &1645224347
 SpriteRenderer:
   serializedVersion: 2
@@ -2109,7 +1914,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.EventSystems.EventTrigger
-  m_Delegates: []
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 11500000, guid: 06d2b205225ea0a45a1f3edd4cd3b830, type: 3}
+          m_TargetAssemblyTypeName: UnityEditor.MonoScript, UnityEditor.CoreModule
+          m_MethodName: set_name
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 3
+            m_BoolArgument: 0
+          m_CallState: 1
 --- !u!1 &1815094153
 GameObject:
   m_ObjectHideFlags: 0
@@ -2120,8 +1941,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1815094157}
   - component: {fileID: 1815094156}
-  - component: {fileID: 1815094155}
-  - component: {fileID: 1815094154}
   - component: {fileID: 1815094159}
   m_Layer: 0
   m_Name: busan
@@ -2130,30 +1949,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1815094154
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1815094153}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 06d2b205225ea0a45a1f3edd4cd3b830, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::UIHoverScale
---- !u!114 &1815094155
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1815094153}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 06d2b205225ea0a45a1f3edd4cd3b830, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::UIHoverScale
 --- !u!212 &1815094156
 SpriteRenderer:
   serializedVersion: 2
@@ -2261,7 +2056,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1815094154}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: UIHoverScale, Assembly-CSharp
           m_MethodName: SendMessage
           m_Mode: 5
@@ -2283,7 +2078,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1986319838}
   - component: {fileID: 1986319837}
-  - component: {fileID: 1986319836}
   - component: {fileID: 1986319840}
   m_Layer: 0
   m_Name: gyeongsang_s
@@ -2292,18 +2086,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1986319836
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1986319835}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 06d2b205225ea0a45a1f3edd4cd3b830, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::UIHoverScale
 --- !u!212 &1986319837
 SpriteRenderer:
   serializedVersion: 2

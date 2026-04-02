@@ -1,22 +1,44 @@
 using UnityEngine;
-using UnityEngine.EventSystems;
 
-public class UIHoverScale : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
+
+public class map_controller : MonoBehaviour
 {
-    private Vector3 originalScale;
 
-    void Start()
+
+    private void OnMouseEnter()
     {
-        originalScale = transform.localScale;
+        IncreaseScale(true);
     }
 
-    public void OnPointerEnter(PointerEventData eventData)
+
+    private void OnMouseExit() 
     {
-        transform.localScale = originalScale * 3f;
+        IncreaseScale(false);
     }
 
-    public void OnPointerExit(PointerEventData eventData)
+
+    private Vector3 initialScale;
+    private Vector3 initialPosition;
+    private void Awake()
     {
-        transform.localScale = originalScale;
+        initialScale = transform.localScale;
+        initialPosition = transform.localPosition;
+    }
+
+
+    private void IncreaseScale(bool status)
+    {
+        Vector3 finalScale = initialScale;
+        Vector3 finalPosition = initialPosition;
+
+        if (status)
+        {
+            finalScale = initialScale * 1.1f;
+            finalPosition.z = 10;
+
+        }
+
+        transform.localScale = finalScale;
+        transform.localPosition = finalPosition;
     }
 }

@@ -4,7 +4,7 @@ using UnityEngine;
 public class map_controller : MonoBehaviour
 {
 
-
+    [SerializeField] private float scaleMultiplier = 1.1f;
     private void OnMouseEnter()
     {
         IncreaseScale(true);
@@ -33,8 +33,8 @@ public class map_controller : MonoBehaviour
 
         if (status)
         {
-            finalScale = initialScale * 1.1f;
-            finalPosition.z = 10;
+            finalScale = initialScale * scaleMultiplier;
+            finalPosition.z = -10;
 
         }
 

@@ -187,6 +187,8 @@ MonoBehaviour:
   strategyButton: {fileID: 97188298}
   startPanel: {fileID: 1676324338}
   bottomStatusHUD: {fileID: 1961282450}
+  Seoul_Map: {fileID: 1323759083}
+  TimePanel: {fileID: 2104415950}
   nameInput: {fileID: 1127469320}
   playerName: 
 --- !u!4 &68944212
@@ -535,6 +537,7 @@ GameObject:
   - component: {fileID: 124305370}
   - component: {fileID: 124305369}
   - component: {fileID: 124305371}
+  - component: {fileID: 124305372}
   m_Layer: 0
   m_Name: Nowon-gu
   m_TagString: Untagged
@@ -729,12 +732,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9c035af0709ec74ba16f961dcdf4c01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::District
+  population: 0
+  defend: 0
   liftAmount: 0.2
   normalColor: {r: 0.08, g: 0.35, b: 0.16, a: 0.9}
   selectedColor: {r: 0.8, g: 1, b: 0.8, a: 1}
   control: 50
   intel: 50
   severity: 50
+--- !u!114 &124305372
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 124305367}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f29dc72db2aa3d34896739eeba3a0fa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RegionEntity
+  myData: {fileID: 11400000, guid: 4f801699ccbbac04ca7528e9a031a8fb, type: 2}
+  uiController: {fileID: 986206148}
 --- !u!1 &148397906
 GameObject:
   m_ObjectHideFlags: 0
@@ -1350,6 +1369,7 @@ GameObject:
   - component: {fileID: 258997599}
   - component: {fileID: 258997598}
   - component: {fileID: 258997600}
+  - component: {fileID: 258997602}
   m_Layer: 0
   m_Name: Yangcheon-gu
   m_TagString: Untagged
@@ -1528,12 +1548,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9c035af0709ec74ba16f961dcdf4c01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::District
+  population: 0
+  defend: 0
   liftAmount: 0.2
   normalColor: {r: 0.08, g: 0.35, b: 0.16, a: 0.9}
   selectedColor: {r: 0.8, g: 1, b: 0.8, a: 1}
   control: 50
   intel: 50
   severity: 50
+--- !u!114 &258997602
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 258997596}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f29dc72db2aa3d34896739eeba3a0fa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RegionEntity
+  myData: {fileID: 11400000, guid: ac9f89cad3a707b499405a5a711870e9, type: 2}
+  uiController: {fileID: 986206148}
 --- !u!1 &274568302
 GameObject:
   m_ObjectHideFlags: 0
@@ -1600,7 +1636,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281479730
+    rgba: 4294967295
   m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -1868,6 +1904,7 @@ GameObject:
   - component: {fileID: 335581200}
   - component: {fileID: 335581199}
   - component: {fileID: 335581201}
+  - component: {fileID: 335581202}
   m_Layer: 0
   m_Name: Geumcheon-gu
   m_TagString: Untagged
@@ -2047,12 +2084,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9c035af0709ec74ba16f961dcdf4c01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::District
+  population: 0
+  defend: 0
   liftAmount: 0.2
   normalColor: {r: 0.08, g: 0.35, b: 0.16, a: 0.9}
   selectedColor: {r: 0.8, g: 1, b: 0.8, a: 1}
   control: 50
   intel: 50
   severity: 50
+--- !u!114 &335581202
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 335581197}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f29dc72db2aa3d34896739eeba3a0fa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RegionEntity
+  myData: {fileID: 11400000, guid: 54b7f31d571555c4497d6f2a51e73bd6, type: 2}
+  uiController: {fileID: 986206148}
 --- !u!1 &361558108
 GameObject:
   m_ObjectHideFlags: 0
@@ -2181,6 +2234,7 @@ GameObject:
   - component: {fileID: 381771554}
   - component: {fileID: 381771553}
   - component: {fileID: 381771555}
+  - component: {fileID: 381771556}
   m_Layer: 0
   m_Name: Mapo-gu
   m_TagString: Untagged
@@ -2365,12 +2419,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9c035af0709ec74ba16f961dcdf4c01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::District
+  population: 0
+  defend: 0
   liftAmount: 0.2
   normalColor: {r: 0.08, g: 0.35, b: 0.16, a: 0.9}
   selectedColor: {r: 0.8, g: 1, b: 0.8, a: 1}
   control: 50
   intel: 50
   severity: 50
+--- !u!114 &381771556
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 381771551}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f29dc72db2aa3d34896739eeba3a0fa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RegionEntity
+  myData: {fileID: 11400000, guid: 52a7f4ad98c4d8f4d8500c09281acec2, type: 2}
+  uiController: {fileID: 986206148}
 --- !u!1 &383524597
 GameObject:
   m_ObjectHideFlags: 0
@@ -2383,6 +2453,7 @@ GameObject:
   - component: {fileID: 383524600}
   - component: {fileID: 383524599}
   - component: {fileID: 383524601}
+  - component: {fileID: 383524602}
   m_Layer: 0
   m_Name: Seocho-gu
   m_TagString: Untagged
@@ -2603,12 +2674,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9c035af0709ec74ba16f961dcdf4c01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::District
+  population: 0
+  defend: 0
   liftAmount: 0.2
   normalColor: {r: 0.08, g: 0.35, b: 0.16, a: 0.9}
   selectedColor: {r: 0.8, g: 1, b: 0.8, a: 1}
   control: 50
   intel: 50
   severity: 50
+--- !u!114 &383524602
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 383524597}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f29dc72db2aa3d34896739eeba3a0fa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RegionEntity
+  myData: {fileID: 11400000, guid: 7e43b2402dac98d4ea830162a0e3cadc, type: 2}
+  uiController: {fileID: 986206148}
 --- !u!1 &387014355
 GameObject:
   m_ObjectHideFlags: 0
@@ -2688,7 +2775,7 @@ MonoBehaviour:
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
   m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: 0
+  m_TextStyleHashCode: -1183493901
   m_overrideHtmlColors: 0
   m_faceColor:
     serializedVersion: 2
@@ -3197,6 +3284,7 @@ GameObject:
   - component: {fileID: 415933870}
   - component: {fileID: 415933869}
   - component: {fileID: 415933871}
+  - component: {fileID: 415933872}
   m_Layer: 0
   m_Name: Seodaemun-gu
   m_TagString: Untagged
@@ -3370,12 +3458,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9c035af0709ec74ba16f961dcdf4c01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::District
+  population: 0
+  defend: 0
   liftAmount: 0.2
   normalColor: {r: 0.08, g: 0.35, b: 0.16, a: 0.9}
   selectedColor: {r: 0.8, g: 1, b: 0.8, a: 1}
   control: 50
   intel: 50
   severity: 50
+--- !u!114 &415933872
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 415933867}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f29dc72db2aa3d34896739eeba3a0fa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RegionEntity
+  myData: {fileID: 11400000, guid: 423976ad71c57f04c8e00fb418fcfd04, type: 2}
+  uiController: {fileID: 986206148}
 --- !u!1 &416233099
 GameObject:
   m_ObjectHideFlags: 0
@@ -3906,7 +4010,7 @@ MonoBehaviour:
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
   m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: 0
+  m_TextStyleHashCode: -1183493901
   m_overrideHtmlColors: 0
   m_faceColor:
     serializedVersion: 2
@@ -4238,6 +4342,7 @@ GameObject:
   - component: {fileID: 559040701}
   - component: {fileID: 559040700}
   - component: {fileID: 559040702}
+  - component: {fileID: 559040703}
   m_Layer: 0
   m_Name: Gangnam-gu
   m_TagString: Untagged
@@ -4439,12 +4544,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9c035af0709ec74ba16f961dcdf4c01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::District
+  population: 0
+  defend: 0
   liftAmount: 0.2
   normalColor: {r: 0.08, g: 0.35, b: 0.16, a: 0.9}
   selectedColor: {r: 0.8, g: 1, b: 0.8, a: 1}
   control: 50
   intel: 50
   severity: 50
+--- !u!114 &559040703
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 559040698}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f29dc72db2aa3d34896739eeba3a0fa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RegionEntity
+  myData: {fileID: 11400000, guid: 0053225c0a97b474789028081e737d74, type: 2}
+  uiController: {fileID: 986206148}
 --- !u!1 &559107708
 GameObject:
   m_ObjectHideFlags: 0
@@ -4867,6 +4988,7 @@ GameObject:
   - component: {fileID: 643231346}
   - component: {fileID: 643231345}
   - component: {fileID: 643231347}
+  - component: {fileID: 643231348}
   m_Layer: 0
   m_Name: Seongdong-gu
   m_TagString: Untagged
@@ -5046,12 +5168,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9c035af0709ec74ba16f961dcdf4c01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::District
+  population: 0
+  defend: 0
   liftAmount: 0.2
   normalColor: {r: 0.08, g: 0.35, b: 0.16, a: 0.9}
   selectedColor: {r: 0.8, g: 1, b: 0.8, a: 1}
   control: 50
   intel: 50
   severity: 50
+--- !u!114 &643231348
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 643231343}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f29dc72db2aa3d34896739eeba3a0fa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RegionEntity
+  myData: {fileID: 11400000, guid: 287cf2f41a3ed3647a62367c65454a3a, type: 2}
+  uiController: {fileID: 986206148}
 --- !u!1 &645915594
 GameObject:
   m_ObjectHideFlags: 0
@@ -5294,7 +5432,7 @@ MonoBehaviour:
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
   m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: 0
+  m_TextStyleHashCode: -1183493901
   m_overrideHtmlColors: 0
   m_faceColor:
     serializedVersion: 2
@@ -5813,6 +5951,138 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 714713954}
   m_CullTransparentMesh: 1
+--- !u!1 &754288100
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 754288101}
+  - component: {fileID: 754288104}
+  - component: {fileID: 754288103}
+  - component: {fileID: 754288102}
+  m_Layer: 5
+  m_Name: Close_btn
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &754288101
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 754288100}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 1}
+  m_LocalScale: {x: 4, y: 12, z: 4}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 986206144}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 1600, y: 900}
+  m_SizeDelta: {x: 160, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &754288102
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 754288100}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Button
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 0
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 754288103}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 986206148}
+        m_TargetAssemblyTypeName: RegionUIController, Assembly-CSharp
+        m_MethodName: ClosePanel
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
+--- !u!114 &754288103
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 754288100}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 2530564911472380330, guid: f2082e7c70ab6ea41a5e580545310d68, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &754288104
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 754288100}
+  m_CullTransparentMesh: 1
 --- !u!1 &766951855
 GameObject:
   m_ObjectHideFlags: 0
@@ -5825,6 +6095,7 @@ GameObject:
   - component: {fileID: 766951858}
   - component: {fileID: 766951857}
   - component: {fileID: 766951859}
+  - component: {fileID: 766951860}
   m_Layer: 0
   m_Name: Jung-gu
   m_TagString: Untagged
@@ -5989,12 +6260,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9c035af0709ec74ba16f961dcdf4c01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::District
+  population: 0
+  defend: 0
   liftAmount: 0.2
   normalColor: {r: 0.08, g: 0.35, b: 0.16, a: 0.9}
   selectedColor: {r: 0.8, g: 1, b: 0.8, a: 1}
   control: 50
   intel: 50
   severity: 50
+--- !u!114 &766951860
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 766951855}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f29dc72db2aa3d34896739eeba3a0fa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RegionEntity
+  myData: {fileID: 11400000, guid: 643974e511768e84abdec9a46301a741, type: 2}
+  uiController: {fileID: 986206148}
 --- !u!1 &767121831
 GameObject:
   m_ObjectHideFlags: 0
@@ -7042,6 +7329,7 @@ GameObject:
   - component: {fileID: 894813897}
   - component: {fileID: 894813896}
   - component: {fileID: 894813898}
+  - component: {fileID: 894813899}
   m_Layer: 0
   m_Name: Dongdaemun-gu
   m_TagString: Untagged
@@ -7218,12 +7506,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9c035af0709ec74ba16f961dcdf4c01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::District
+  population: 0
+  defend: 0
   liftAmount: 0.2
   normalColor: {r: 0.08, g: 0.35, b: 0.16, a: 0.9}
   selectedColor: {r: 0.8, g: 1, b: 0.8, a: 1}
   control: 50
   intel: 50
   severity: 50
+--- !u!114 &894813899
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 894813894}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f29dc72db2aa3d34896739eeba3a0fa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RegionEntity
+  myData: {fileID: 11400000, guid: e71cb5b89caf7cd44880c428699be23f, type: 2}
+  uiController: {fileID: 986206148}
 --- !u!1 &897026817
 GameObject:
   m_ObjectHideFlags: 0
@@ -7843,6 +8147,102 @@ Transform:
   - {fileID: 645915595}
   m_Father: {fileID: 1961282451}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &986206143
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 986206144}
+  - component: {fileID: 986206147}
+  - component: {fileID: 986206146}
+  - component: {fileID: 986206148}
+  m_Layer: 5
+  m_Name: Mapinfo
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &986206144
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 986206143}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.3, y: 0.5, z: 0}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1060047479}
+  - {fileID: 1709351835}
+  - {fileID: 1797175212}
+  - {fileID: 754288101}
+  - {fileID: 1415209727}
+  m_Father: {fileID: 1859534722}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 672, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 0.5}
+--- !u!114 &986206146
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 986206143}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 6206216403989782425, guid: 81e2955157a3ca3468dfa0f7f81e25ec, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &986206147
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 986206143}
+  m_CullTransparentMesh: 1
+--- !u!114 &986206148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 986206143}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a87ab732b06116841ae60267099e7609, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MapInfo
+  nameText: {fileID: 1060047480}
+  popText: {fileID: 1709351836}
+  logoImage: {fileID: 1797175213}
 --- !u!1 &1006003541
 GameObject:
   m_ObjectHideFlags: 0
@@ -7930,6 +8330,7 @@ GameObject:
   - component: {fileID: 1007572264}
   - component: {fileID: 1007572263}
   - component: {fileID: 1007572265}
+  - component: {fileID: 1007572266}
   m_Layer: 0
   m_Name: Yeongdeungpo-gu
   m_TagString: Untagged
@@ -8122,12 +8523,165 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9c035af0709ec74ba16f961dcdf4c01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::District
+  population: 0
+  defend: 0
   liftAmount: 0.2
   normalColor: {r: 0.08, g: 0.35, b: 0.16, a: 0.9}
   selectedColor: {r: 0.8, g: 1, b: 0.8, a: 1}
   control: 50
   intel: 50
   severity: 50
+--- !u!114 &1007572266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1007572261}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f29dc72db2aa3d34896739eeba3a0fa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RegionEntity
+  myData: {fileID: 11400000, guid: 2af363dcd39f8994c96f3040098d1444, type: 2}
+  uiController: {fileID: 986206148}
+--- !u!1 &1060047478
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1060047479}
+  - component: {fileID: 1060047481}
+  - component: {fileID: 1060047480}
+  m_Layer: 5
+  m_Name: RegionName
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1060047479
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1060047478}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 4, y: 4, z: 4}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 986206144}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 20, y: 950}
+  m_SizeDelta: {x: 10000, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1060047480
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1060047478}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: New Text
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 80
+  m_fontSizeBase: 80
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_characterHorizontalScale: 1
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_TextWrappingMode: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 0
+  m_ActiveFontFeatures: 6e72656b
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_EmojiFallbackSupport: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1060047481
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1060047478}
+  m_CullTransparentMesh: 1
 --- !u!1 &1098361236
 GameObject:
   m_ObjectHideFlags: 0
@@ -8215,6 +8769,7 @@ GameObject:
   - component: {fileID: 1114095182}
   - component: {fileID: 1114095181}
   - component: {fileID: 1114095183}
+  - component: {fileID: 1114095184}
   m_Layer: 0
   m_Name: Gangdong-gu
   m_TagString: Untagged
@@ -8404,12 +8959,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9c035af0709ec74ba16f961dcdf4c01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::District
+  population: 0
+  defend: 0
   liftAmount: 0.2
   normalColor: {r: 0.08, g: 0.35, b: 0.16, a: 0.9}
   selectedColor: {r: 0.8, g: 1, b: 0.8, a: 1}
   control: 50
   intel: 50
   severity: 50
+--- !u!114 &1114095184
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1114095179}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f29dc72db2aa3d34896739eeba3a0fa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RegionEntity
+  myData: {fileID: 11400000, guid: 28788aecbd15b3e46a43dd61e0a43800, type: 2}
+  uiController: {fileID: 986206148}
 --- !u!1 &1127469319
 GameObject:
   m_ObjectHideFlags: 0
@@ -8600,6 +9171,7 @@ GameObject:
   - component: {fileID: 1163047285}
   - component: {fileID: 1163047284}
   - component: {fileID: 1163047286}
+  - component: {fileID: 1163047287}
   m_Layer: 0
   m_Name: Yongsan-gu
   m_TagString: Untagged
@@ -8764,12 +9336,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9c035af0709ec74ba16f961dcdf4c01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::District
+  population: 0
+  defend: 0
   liftAmount: 0.2
   normalColor: {r: 0.08, g: 0.35, b: 0.16, a: 0.9}
   selectedColor: {r: 0.8, g: 1, b: 0.8, a: 1}
   control: 50
   intel: 50
   severity: 50
+--- !u!114 &1163047287
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1163047282}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f29dc72db2aa3d34896739eeba3a0fa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RegionEntity
+  myData: {fileID: 11400000, guid: f0e255c7cc5dd254d8410e8f7a3c0c71, type: 2}
+  uiController: {fileID: 986206148}
 --- !u!1 &1182035562
 GameObject:
   m_ObjectHideFlags: 0
@@ -8973,6 +9561,7 @@ GameObject:
   - component: {fileID: 1254079551}
   - component: {fileID: 1254079550}
   - component: {fileID: 1254079552}
+  - component: {fileID: 1254079553}
   m_Layer: 0
   m_Name: Dongjak-gu
   m_TagString: Untagged
@@ -9158,12 +9747,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9c035af0709ec74ba16f961dcdf4c01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::District
+  population: 0
+  defend: 0
   liftAmount: 0.2
   normalColor: {r: 0.08, g: 0.35, b: 0.16, a: 0.9}
   selectedColor: {r: 0.8, g: 1, b: 0.8, a: 1}
   control: 50
   intel: 50
   severity: 50
+--- !u!114 &1254079553
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1254079548}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f29dc72db2aa3d34896739eeba3a0fa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RegionEntity
+  myData: {fileID: 11400000, guid: fa208ca6a9198584fa6e89f91ba5a184, type: 2}
+  uiController: {fileID: 986206148}
 --- !u!1 &1273197489
 GameObject:
   m_ObjectHideFlags: 0
@@ -9517,7 +10122,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
+    rgba: 4279079747
   m_fontColor: {r: 0.2627451, g: 0.5764706, b: 0.050980393, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -9530,7 +10135,7 @@ MonoBehaviour:
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
   m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: 0
+  m_TextStyleHashCode: -1183493901
   m_overrideHtmlColors: 0
   m_faceColor:
     serializedVersion: 2
@@ -9785,9 +10390,9 @@ Transform:
   m_GameObject: {fileID: 1323759083}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalPosition: {x: -0.13, y: 0.24, z: 0}
+  m_LocalScale: {x: 0.74399245, y: 0.74399245, z: 0.74399245}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1496915649}
   - {fileID: 894813895}
@@ -9916,6 +10521,7 @@ GameObject:
   - component: {fileID: 1391972085}
   - component: {fileID: 1391972084}
   - component: {fileID: 1391972086}
+  - component: {fileID: 1391972087}
   m_Layer: 0
   m_Name: Gangbuk-gu
   m_TagString: Untagged
@@ -10103,12 +10709,148 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9c035af0709ec74ba16f961dcdf4c01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::District
+  population: 0
+  defend: 0
   liftAmount: 0.2
   normalColor: {r: 0.08, g: 0.35, b: 0.16, a: 0.9}
   selectedColor: {r: 0.8, g: 1, b: 0.8, a: 1}
   control: 50
   intel: 50
   severity: 50
+--- !u!114 &1391972087
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1391972082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f29dc72db2aa3d34896739eeba3a0fa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RegionEntity
+  myData: {fileID: 11400000, guid: 4f3d09a7179522840a6f3bc366243d3d, type: 2}
+  uiController: {fileID: 986206148}
+--- !u!1 &1415209726
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1415209727}
+  - component: {fileID: 1415209730}
+  - component: {fileID: 1415209729}
+  - component: {fileID: 1415209728}
+  m_Layer: 5
+  m_Name: Start_btn
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1415209727
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1415209726}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 11, y: 18.857143, z: 11}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 986206144}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 930, y: -660}
+  m_SizeDelta: {x: 160, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1415209728
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1415209726}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Button
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1415209729}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &1415209729
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1415209726}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: -3500759553075992606, guid: 7a03b42d76fb5f94fa4dfcab92254d04, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1415209730
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1415209726}
+  m_CullTransparentMesh: 1
 --- !u!1 &1428337759
 GameObject:
   m_ObjectHideFlags: 0
@@ -10336,6 +11078,7 @@ GameObject:
   - component: {fileID: 1496915650}
   - component: {fileID: 1496915652}
   - component: {fileID: 1496915653}
+  - component: {fileID: 1496915654}
   m_Layer: 0
   m_Name: Dobong-gu
   m_TagString: Untagged
@@ -10522,6 +11265,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9c035af0709ec74ba16f961dcdf4c01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::District
+  population: 0
+  defend: 0
   liftAmount: 0.2
   normalColor: {r: 0.08, g: 0.35, b: 0.16, a: 0.9}
   selectedColor: {r: 0.8, g: 1, b: 0.8, a: 1}
@@ -10536,6 +11281,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1496915648}
   m_CullTransparentMesh: 1
+--- !u!114 &1496915654
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1496915648}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f29dc72db2aa3d34896739eeba3a0fa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RegionEntity
+  myData: {fileID: 11400000, guid: 1e608469f6e55e14cbf3c0f934328f78, type: 2}
+  uiController: {fileID: 986206148}
 --- !u!1 &1497255742
 GameObject:
   m_ObjectHideFlags: 0
@@ -10548,6 +11307,7 @@ GameObject:
   - component: {fileID: 1497255745}
   - component: {fileID: 1497255744}
   - component: {fileID: 1497255746}
+  - component: {fileID: 1497255747}
   m_Layer: 0
   m_Name: Gangseo-gu
   m_TagString: Untagged
@@ -10750,12 +11510,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9c035af0709ec74ba16f961dcdf4c01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::District
+  population: 0
+  defend: 0
   liftAmount: 0.2
   normalColor: {r: 0.08, g: 0.35, b: 0.16, a: 0.9}
   selectedColor: {r: 0.8, g: 1, b: 0.8, a: 1}
   control: 50
   intel: 50
   severity: 50
+--- !u!114 &1497255747
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1497255742}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f29dc72db2aa3d34896739eeba3a0fa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RegionEntity
+  myData: {fileID: 11400000, guid: 0d8e1a60e75d1434bb75539402fe377a, type: 2}
+  uiController: {fileID: 986206148}
 --- !u!1 &1520254551
 GameObject:
   m_ObjectHideFlags: 0
@@ -11080,6 +11856,7 @@ GameObject:
   - component: {fileID: 1542150036}
   - component: {fileID: 1542150035}
   - component: {fileID: 1542150037}
+  - component: {fileID: 1542150038}
   m_Layer: 0
   m_Name: Jungnang-gu
   m_TagString: Untagged
@@ -11248,12 +12025,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9c035af0709ec74ba16f961dcdf4c01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::District
+  population: 0
+  defend: 0
   liftAmount: 0.2
   normalColor: {r: 0.08, g: 0.35, b: 0.16, a: 0.9}
   selectedColor: {r: 0.8, g: 1, b: 0.8, a: 1}
   control: 50
   intel: 50
   severity: 50
+--- !u!114 &1542150038
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1542150033}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f29dc72db2aa3d34896739eeba3a0fa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RegionEntity
+  myData: {fileID: 11400000, guid: f6cde505177c9e447ad2f2406122234f, type: 2}
+  uiController: {fileID: 986206148}
 --- !u!1 &1546794035
 GameObject:
   m_ObjectHideFlags: 0
@@ -11688,7 +12481,7 @@ MonoBehaviour:
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
   m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: 0
+  m_TextStyleHashCode: -1183493901
   m_overrideHtmlColors: 0
   m_faceColor:
     serializedVersion: 2
@@ -11979,6 +12772,143 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1700618686}
   m_CullTransparentMesh: 1
+--- !u!1 &1709351834
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1709351835}
+  - component: {fileID: 1709351837}
+  - component: {fileID: 1709351836}
+  m_Layer: 5
+  m_Name: Population
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1709351835
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1709351834}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 3, y: 3, z: 3}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 986206144}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 700, y: 600}
+  m_SizeDelta: {x: 400, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1709351836
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1709351834}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: "\uC778\uAD6C\uC218\n"
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: c33c0204e7f8eb145a8ae2e42741ae35, type: 2}
+  m_sharedMaterial: {fileID: -6663709504399077043, guid: c33c0204e7f8eb145a8ae2e42741ae35, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 50
+  m_fontSizeBase: 50
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_characterHorizontalScale: 1
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_TextWrappingMode: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 0
+  m_ActiveFontFeatures: 6e72656b
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_EmojiFallbackSupport: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1709351837
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1709351834}
+  m_CullTransparentMesh: 1
 --- !u!1 &1716146037
 GameObject:
   m_ObjectHideFlags: 0
@@ -12082,6 +13012,7 @@ GameObject:
   - component: {fileID: 1757360384}
   - component: {fileID: 1757360383}
   - component: {fileID: 1757360385}
+  - component: {fileID: 1757360386}
   m_Layer: 0
   m_Name: Seongbuk-gu
   m_TagString: Untagged
@@ -12289,12 +13220,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9c035af0709ec74ba16f961dcdf4c01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::District
+  population: 0
+  defend: 0
   liftAmount: 0.2
   normalColor: {r: 0.08, g: 0.35, b: 0.16, a: 0.9}
   selectedColor: {r: 0.8, g: 1, b: 0.8, a: 1}
   control: 50
   intel: 50
   severity: 50
+--- !u!114 &1757360386
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1757360381}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f29dc72db2aa3d34896739eeba3a0fa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RegionEntity
+  myData: {fileID: 11400000, guid: 3630be1fdf06c3340aa703c50ab7457e, type: 2}
+  uiController: {fileID: 986206148}
 --- !u!1 &1771308685
 GameObject:
   m_ObjectHideFlags: 0
@@ -12440,6 +13387,7 @@ GameObject:
   - component: {fileID: 1773227250}
   - component: {fileID: 1773227249}
   - component: {fileID: 1773227251}
+  - component: {fileID: 1773227252}
   m_Layer: 0
   m_Name: Guro-gu
   m_TagString: Untagged
@@ -12622,12 +13570,103 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9c035af0709ec74ba16f961dcdf4c01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::District
+  population: 0
+  defend: 0
   liftAmount: 0.2
   normalColor: {r: 0.08, g: 0.35, b: 0.16, a: 0.9}
   selectedColor: {r: 0.8, g: 1, b: 0.8, a: 1}
   control: 50
   intel: 50
   severity: 50
+--- !u!114 &1773227252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1773227247}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f29dc72db2aa3d34896739eeba3a0fa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RegionEntity
+  myData: {fileID: 11400000, guid: baa19828653b8944eb6967c68f640f9d, type: 2}
+  uiController: {fileID: 986206148}
+--- !u!1 &1797175211
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1797175212}
+  - component: {fileID: 1797175214}
+  - component: {fileID: 1797175213}
+  m_Layer: 5
+  m_Name: RegionLogo
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1797175212
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1797175211}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 986206144}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -450, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1797175213
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1797175211}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1797175214
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1797175211}
+  m_CullTransparentMesh: 1
 --- !u!1 &1807486226
 GameObject:
   m_ObjectHideFlags: 0
@@ -13069,6 +14108,7 @@ RectTransform:
   - {fileID: 703773804}
   - {fileID: 415383480}
   - {fileID: 1961282451}
+  - {fileID: 986206144}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -13088,6 +14128,7 @@ GameObject:
   - component: {fileID: 1868715468}
   - component: {fileID: 1868715467}
   - component: {fileID: 1868715469}
+  - component: {fileID: 1868715470}
   m_Layer: 0
   m_Name: Jongno-gu
   m_TagString: Untagged
@@ -13276,12 +14317,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9c035af0709ec74ba16f961dcdf4c01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::District
+  population: 0
+  defend: 0
   liftAmount: 0.2
   normalColor: {r: 0.08, g: 0.35, b: 0.16, a: 0.9}
   selectedColor: {r: 0.8, g: 1, b: 0.8, a: 1}
   control: 50
   intel: 50
   severity: 50
+--- !u!114 &1868715470
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1868715465}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f29dc72db2aa3d34896739eeba3a0fa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RegionEntity
+  myData: {fileID: 11400000, guid: 78fa80e396ba7724d95f4fd4b51b3975, type: 2}
+  uiController: {fileID: 986206148}
 --- !u!1 &1890927174
 GameObject:
   m_ObjectHideFlags: 0
@@ -13348,7 +14405,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281479730
+    rgba: 4294967295
   m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -13485,7 +14542,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
+    rgba: 4279079747
   m_fontColor: {r: 0.26118535, g: 0.5754717, b: 0.05157528, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -13498,7 +14555,7 @@ MonoBehaviour:
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
   m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: 0
+  m_TextStyleHashCode: -1183493901
   m_overrideHtmlColors: 0
   m_faceColor:
     serializedVersion: 2
@@ -13737,6 +14794,7 @@ GameObject:
   - component: {fileID: 1922125998}
   - component: {fileID: 1922125997}
   - component: {fileID: 1922125999}
+  - component: {fileID: 1922126000}
   m_Layer: 0
   m_Name: Gwanak-gu
   m_TagString: Untagged
@@ -13917,12 +14975,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9c035af0709ec74ba16f961dcdf4c01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::District
+  population: 0
+  defend: 0
   liftAmount: 0.2
   normalColor: {r: 0.08, g: 0.35, b: 0.16, a: 0.9}
   selectedColor: {r: 0.8, g: 1, b: 0.8, a: 1}
   control: 50
   intel: 50
   severity: 50
+--- !u!114 &1922126000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1922125995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f29dc72db2aa3d34896739eeba3a0fa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RegionEntity
+  myData: {fileID: 11400000, guid: 0d9250d7a3dfd3d4093b9e1d1fd6df1e, type: 2}
+  uiController: {fileID: 986206148}
 --- !u!1 &1927403482
 GameObject:
   m_ObjectHideFlags: 0
@@ -14056,6 +15130,7 @@ GameObject:
   - component: {fileID: 1942472352}
   - component: {fileID: 1942472351}
   - component: {fileID: 1942472353}
+  - component: {fileID: 1942472354}
   m_Layer: 0
   m_Name: Gwangjin-gu
   m_TagString: Untagged
@@ -14233,12 +15308,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9c035af0709ec74ba16f961dcdf4c01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::District
+  population: 0
+  defend: 0
   liftAmount: 0.2
   normalColor: {r: 0.08, g: 0.35, b: 0.16, a: 0.9}
   selectedColor: {r: 0.8, g: 1, b: 0.8, a: 1}
   control: 50
   intel: 50
   severity: 50
+--- !u!114 &1942472354
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1942472349}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f29dc72db2aa3d34896739eeba3a0fa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RegionEntity
+  myData: {fileID: 11400000, guid: e0d7963d32ddb254fbb4ca242ffb5904, type: 2}
+  uiController: {fileID: 986206148}
 --- !u!1 &1957200448
 GameObject:
   m_ObjectHideFlags: 0
@@ -14318,7 +15409,7 @@ MonoBehaviour:
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
   m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: 0
+  m_TextStyleHashCode: -1183493901
   m_overrideHtmlColors: 0
   m_faceColor:
     serializedVersion: 2
@@ -14505,6 +15596,7 @@ GameObject:
   - component: {fileID: 1985939706}
   - component: {fileID: 1985939705}
   - component: {fileID: 1985939707}
+  - component: {fileID: 1985939708}
   m_Layer: 0
   m_Name: Songpa-gu
   m_TagString: Untagged
@@ -14702,12 +15794,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9c035af0709ec74ba16f961dcdf4c01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::District
+  population: 0
+  defend: 0
   liftAmount: 0.2
   normalColor: {r: 0.08, g: 0.35, b: 0.16, a: 0.9}
   selectedColor: {r: 0.8, g: 1, b: 0.8, a: 1}
   control: 50
   intel: 50
   severity: 50
+--- !u!114 &1985939708
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1985939703}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f29dc72db2aa3d34896739eeba3a0fa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RegionEntity
+  myData: {fileID: 11400000, guid: 3d7a45dc3d287a4438e66904d48fb38f, type: 2}
+  uiController: {fileID: 986206148}
 --- !u!1 &2040216621
 GameObject:
   m_ObjectHideFlags: 0
@@ -14720,6 +15828,7 @@ GameObject:
   - component: {fileID: 2040216624}
   - component: {fileID: 2040216623}
   - component: {fileID: 2040216625}
+  - component: {fileID: 2040216626}
   m_Layer: 0
   m_Name: Eunpyeong-gu
   m_TagString: Untagged
@@ -14904,12 +16013,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9c035af0709ec74ba16f961dcdf4c01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::District
+  population: 0
+  defend: 0
   liftAmount: 0.2
   normalColor: {r: 0.08, g: 0.35, b: 0.16, a: 0.9}
   selectedColor: {r: 0.8, g: 1, b: 0.8, a: 1}
   control: 50
   intel: 50
   severity: 50
+--- !u!114 &2040216626
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2040216621}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f29dc72db2aa3d34896739eeba3a0fa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RegionEntity
+  myData: {fileID: 11400000, guid: 997f63ad61ee7714a8d143edf72dd1f2, type: 2}
+  uiController: {fileID: 986206148}
 --- !u!1 &2044930974
 GameObject:
   m_ObjectHideFlags: 0

@@ -11,6 +11,10 @@ public class District : MonoBehaviour
 
     private bool isSelected = false;
 
+    [Header("Info")]
+    public int population;
+    public int defend;
+
     [Header("Selection")]
     public float liftAmount = 0.05f;
     public Color normalColor = new Color(0.08f, 0.35f, 0.16f, 0.9f);

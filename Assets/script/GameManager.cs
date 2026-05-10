@@ -1,5 +1,6 @@
 using UnityEngine;
 using TMPro;
+using UnityEngine.Tilemaps;
 
 public class GameManager : MonoBehaviour
 {
@@ -9,7 +10,8 @@ public class GameManager : MonoBehaviour
     public GameObject strategyButton;
     public GameObject startPanel;
     public GameObject bottomStatusHUD;
-
+    public GameObject Seoul_Map;
+    public GameObject TimePanel;
     public TMP_InputField nameInput;
 
     [Header("Player Data")]
@@ -22,6 +24,9 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
+
+        Seoul_Map.SetActive(false);
+        TimePanel.SetActive(false);
         // 시작 화면 표시
         if (startPanel != null)
             startPanel.SetActive(true);
@@ -41,6 +46,8 @@ public class GameManager : MonoBehaviour
 
     public void OnClickStart()
     {
+        TimePanel.SetActive(true );
+        Seoul_Map.SetActive(true);
         // 플레이어 이름 입력 저장
         if (nameInput != null)
             playerName = nameInput.text;

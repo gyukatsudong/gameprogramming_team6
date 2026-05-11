@@ -13,6 +13,7 @@ public class GameManager : MonoBehaviour
     public GameObject Seoul_Map;
     public GameObject TimePanel;
     public TMP_InputField nameInput;
+  
 
     [Header("Player Data")]
     public string playerName = "Player";
@@ -42,6 +43,9 @@ public class GameManager : MonoBehaviour
         // 시간 정지
         if (TimeManager.instance != null)
             TimeManager.instance.Pause();
+
+
+   
     }
 
     public void OnClickStart()

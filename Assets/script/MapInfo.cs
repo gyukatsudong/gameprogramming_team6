@@ -7,7 +7,7 @@ public class RegionUIController : MonoBehaviour
     public TextMeshProUGUI nameText;
     public TextMeshProUGUI popText;
     public Image logoImage;
-
+    
     private RectTransform rectTransform;
 
     void Awake()
@@ -21,23 +21,26 @@ public class RegionUIController : MonoBehaviour
         gameObject.SetActive(false);
     }
 
-    public void DisplayRegion(RegionData data, Vector3 worldPosition)
+    public void DisplayRegion(RegionData data, float x, float y)
     {
         gameObject.SetActive(true);
+        
         nameText.text = data.regionName;
         popText.text = $"인구: {data.population:N0}명";
         if (logoImage != null) logoImage.sprite = data.logo;
 
         
-        
-
-
 
     }
 
-    // 닫기 버튼에 연결할 함수
+   
     public void ClosePanel()
     {
         gameObject.SetActive(false);
+        if (District.currentSelected != null)
+        {
+            District.currentSelected.Deselect();
+            District.currentSelected = null;
+        }
     }
 }

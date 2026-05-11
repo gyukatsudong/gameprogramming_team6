@@ -6,14 +6,17 @@ public class District : MonoBehaviour
     private Vector3 originalPosition;
     private int originalSortingOrder;
     private SpriteRenderer spriteRenderer;
-
+    public GameObject MapInfo;
     public static District currentSelected;
+   
+
+
+
+
 
     private bool isSelected = false;
 
-    [Header("Info")]
-    public int population;
-    public int defend;
+  
 
     [Header("Selection")]
     public float liftAmount = 0.05f;
@@ -37,7 +40,7 @@ public class District : MonoBehaviour
 
         spriteRenderer.color = normalColor;
     }
-
+  
     void OnMouseDown()
     {
         if (EventSystem.current != null && EventSystem.current.IsPointerOverGameObject())
@@ -55,6 +58,7 @@ public class District : MonoBehaviour
 
             MapUIManager.Instance.ShowDefaultMessage();
             return;
+            
         }
 
         if (currentSelected != null)
@@ -68,17 +72,21 @@ public class District : MonoBehaviour
 
     void Select()
     {
+        
+        MapInfo.SetActive(true);
         isSelected = true;
 
         transform.position = originalPosition + new Vector3(0, liftAmount, 0);
         spriteRenderer.sortingOrder = 100;
         spriteRenderer.color = selectedColor;
+        
     }
 
     public void Deselect()
     {
+        
         isSelected = false;
-
+        MapInfo.SetActive(false);
         transform.position = originalPosition;
         spriteRenderer.sortingOrder = originalSortingOrder;
         spriteRenderer.color = normalColor;
@@ -92,4 +100,6 @@ public class District : MonoBehaviour
 
         MapUIManager.Instance.UpdateBars(this);
     }
+
+    
 }

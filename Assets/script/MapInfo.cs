@@ -7,9 +7,9 @@ public class RegionUIController : MonoBehaviour
     public TextMeshProUGUI nameText;
     public TextMeshProUGUI popText;
     public Image logoImage;
-    
+    public MapUIManager mapUIManager;
     private RectTransform rectTransform;
-
+    
     void Awake()
     {
         rectTransform = GetComponent<RectTransform>();
@@ -26,7 +26,7 @@ public class RegionUIController : MonoBehaviour
         gameObject.SetActive(true);
         
         nameText.text = data.regionName;
-        popText.text = $"ΐΞ±Έ: {data.population:N0}Έν";
+        //popText.text = $"intel: {District.intel}";
         if (logoImage != null) logoImage.sprite = data.logo;
 
         

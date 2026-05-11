@@ -9,7 +9,7 @@ public class RegionEntity : MonoBehaviour
     public GameObject Mapinfo;
     public District District;
     private RectTransform rect;
-
+   
     private void Start()
     {
         // RectTransform Ä³½Ì
@@ -31,7 +31,7 @@ public class RegionEntity : MonoBehaviour
 
             float targetX = screenPos.x + 150f;
             float targetY = screenPos.y;
-            Debug.Log(targetX);
+      ;
             if (targetY >= 1600f)
             {
                 targetY -= 400f;

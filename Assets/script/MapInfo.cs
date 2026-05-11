@@ -23,13 +23,13 @@ public class RegionUIController : MonoBehaviour
 
     public void DisplayRegion(RegionData data, Vector3 worldPosition)
     {
-        
+        gameObject.SetActive(true);
         nameText.text = data.regionName;
         popText.text = $"ΐΞ±Έ: {data.population:N0}Έν";
         if (logoImage != null) logoImage.sprite = data.logo;
 
         
-        gameObject.SetActive(true);
+        
 
 
 

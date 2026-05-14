@@ -24,9 +24,9 @@ public class District : MonoBehaviour
     public Color selectedColor = new Color(0.55f, 1f, 0.65f, 0.95f);
 
     [Header("Stats")]
-    [Range(0, 100)] public int control = 50;
-    [Range(0, 100)] public int intel = 50;
-    [Range(0, 100)] public int severity = 50;
+    [Range(0, 100)] public float control = 50;
+    [Range(0, 100)] public float intel = 50;
+    [Range(0, 100)] public float severity = 50;
 
     void Awake()
     {
@@ -92,7 +92,7 @@ public class District : MonoBehaviour
         spriteRenderer.color = normalColor;
     }
 
-    public void ModifyStats(int c, int i, int s)
+    public void ModifyStats(float c, float i, float s)
     {
         control = Mathf.Clamp(control + c, 0, 100);
         intel = Mathf.Clamp(intel + i, 0, 100);

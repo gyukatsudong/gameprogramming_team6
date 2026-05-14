@@ -33,6 +33,9 @@ public class StrategyManager : MonoBehaviour
     public TextMeshProUGUI selectedRegionText;
     public TextMeshProUGUI systemStateText;
 
+    [Header("Hide")]
+    public GameObject MapInfo;
+
     void Awake()
     {
         Instance = this;
@@ -60,6 +63,7 @@ public class StrategyManager : MonoBehaviour
         }
 
         strategyPanel.SetActive(true);
+        MapInfo.SetActive(false);
         regionNameText.text = District.currentSelected.gameObject.name;
 
         if (TimeManager.instance != null)
@@ -71,6 +75,7 @@ public class StrategyManager : MonoBehaviour
     public void CloseStrategy()
     {
         strategyPanel.SetActive(false);
+        MapInfo?.SetActive(true);
 
         if (TimeManager.instance != null)
             TimeManager.instance.Speed1x();

@@ -190,6 +190,8 @@ MonoBehaviour:
   Seoul_Map: {fileID: 1323759083}
   TimePanel: {fileID: 2104415950}
   nameInput: {fileID: 1127469320}
+  MapInfo: {fileID: 986206143}
+  StatusButton: {fileID: 967870850}
   playerName: 
 --- !u!4 &68944212
 Transform:
@@ -1144,6 +1146,7 @@ MonoBehaviour:
   currentDateText: {fileID: 522295526}
   selectedRegionText: {fileID: 0}
   systemStateText: {fileID: 0}
+  MapInfo: {fileID: 986206143}
 --- !u!4 &227658453
 Transform:
   m_ObjectHideFlags: 0
@@ -5618,7 +5621,7 @@ GameObject:
   - component: {fileID: 703773806}
   - component: {fileID: 703773805}
   m_Layer: 5
-  m_Name: StautsPanel
+  m_Name: StatusPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11633,9 +11636,9 @@ MonoBehaviour:
   liftAmount: 0.2
   normalColor: {r: 0.08, g: 0.35, b: 0.16, a: 0.9}
   selectedColor: {r: 0.8, g: 1, b: 0.8, a: 1}
-  control: 50
-  intel: 88
-  severity: 50
+  control: 81
+  intel: 85
+  severity: 83
 --- !u!114 &1496915654
 MonoBehaviour:
   m_ObjectHideFlags: 0

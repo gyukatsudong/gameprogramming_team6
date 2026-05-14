@@ -1,6 +1,7 @@
 using UnityEngine;
 using TMPro;
 using UnityEngine.Tilemaps;
+using Unity.VisualScripting;
 
 public class GameManager : MonoBehaviour
 {
@@ -13,7 +14,10 @@ public class GameManager : MonoBehaviour
     public GameObject Seoul_Map;
     public GameObject TimePanel;
     public TMP_InputField nameInput;
-  
+    public GameObject MapInfo;
+    public GameObject StatusButton;
+
+
 
     [Header("Player Data")]
     public string playerName = "Player";
@@ -26,8 +30,8 @@ public class GameManager : MonoBehaviour
     void Start()
     {
 
-        Seoul_Map.SetActive(false);
-        TimePanel.SetActive(false);
+        
+       
         // 시작 화면 표시
         if (startPanel != null)
             startPanel.SetActive(true);
@@ -40,18 +44,33 @@ public class GameManager : MonoBehaviour
         if (bottomStatusHUD != null)
             bottomStatusHUD.SetActive(false);
 
+        // 게임 시작 전 서울 지도 숨김
+        if (Seoul_Map != null)
+            Seoul_Map.SetActive(false);
+
+        // 게임 시작 전 시간 숨김
+        if (TimePanel != null)
+            TimePanel.SetActive(false);
+
+        // 게임 시작 전 정보창 숨김
+        if (MapInfo != null)
+            MapInfo.SetActive(false);
+
+        // 게임 시작 전 StatusPanel 숨김
+        if (StatusButton != null)
+            StatusButton.SetActive(false);
+
         // 시간 정지
         if (TimeManager.instance != null)
             TimeManager.instance.Pause();
 
+        
 
-   
     }
 
     public void OnClickStart()
     {
-        TimePanel.SetActive(true );
-        Seoul_Map.SetActive(true);
+   
         // 플레이어 이름 입력 저장
         if (nameInput != null)
             playerName = nameInput.text;
@@ -72,8 +91,22 @@ public class GameManager : MonoBehaviour
         if (bottomStatusHUD != null)
             bottomStatusHUD.SetActive(true);
 
+        // 서울 지도 표시
+        if (Seoul_Map != null) 
+            Seoul_Map.SetActive(true);
+
+        // 시간 표시
+        if (TimePanel != null) 
+            TimePanel.SetActive(true);
+
+        // StatusPanel 표시
+        if (StatusButton != null)
+            StatusButton.SetActive(true);
+
         // 시간 재시작
         if (TimeManager.instance != null)
             TimeManager.instance.Speed1x();
     }
+
+    
 }

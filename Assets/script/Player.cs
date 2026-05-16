@@ -44,5 +44,9 @@ public class Player : MonoBehaviour
         }
     }
 
+    public void powerUp()
+    {
+        power += 1;
+    }
     
 }

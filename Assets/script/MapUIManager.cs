@@ -5,18 +5,18 @@ using UnityEngine.UI;
 public class MapUIManager : MonoBehaviour
 {
     public static MapUIManager Instance;
-   
+
     public TextMeshProUGUI regionNameText;
 
     public Slider controlSlider;
     public Slider intelSlider;
     public Slider severitySlider;
-    public Slider intelSlider_MapInfo;
+
     void Awake()
     {
         Instance = this;
     }
-    
+
     public void ShowInfo(District d)
     {
         regionNameText.text = d.gameObject.name;
@@ -28,7 +28,6 @@ public class MapUIManager : MonoBehaviour
         controlSlider.value = d.control;
         intelSlider.value = d.intel;
         severitySlider.value = d.severity;
-        intelSlider_MapInfo.value = d.intel;
     }
 
     public void ShowDefaultMessage()
@@ -38,8 +37,5 @@ public class MapUIManager : MonoBehaviour
         controlSlider.value = 0;
         intelSlider.value = 0;
         severitySlider.value = 0;
-        
     }
-
-
 }
